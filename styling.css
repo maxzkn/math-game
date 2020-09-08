@@ -1,0 +1,183 @@
+html{
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(4, 119, 88), #e0e0e0);
+}
+
+#container{
+    background: linear-gradient(45deg, rgb(22, 94, 126), #84b183);
+    height: 400px;
+    width: 600px;
+    margin: 85px auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 7px 7px 12px 0px #000000;
+    -moz-box-shadow: 7px 7px 12px 0px #000000;
+    -webkit-box-shadow: 7px 7px 12px 0px #000000;
+    /* box-shadow: [horizontal offset]
+        [vertical offset] [blur radius] [optional spread radius] [color]} */
+}
+
+#score{
+    background: linear-gradient(to bottom right, rgb(6, 130, 167), #064071);
+    color: ghostwhite;
+    padding: 10px;
+    position: absolute;
+    left: 548px;
+    box-shadow: 3px 3px 2px 0px rgb(29, 82, 114);
+    -webkit-box-shadow: 3px 3px 2px 0px rgb(29, 82, 114);
+    -moz-box-shadow: 3px 3px 2px 0px rgb(29, 82, 114);
+    border-radius: 3px;
+}
+
+#correct{
+    position: absolute;
+    left: 300px;
+    color: ghostwhite;
+    background: linear-gradient(to bottom right, rgb(26, 167, 15), #1c6f25);
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+}
+
+#tryagain{
+    position: absolute;
+    left: 300px;
+    color: ghostwhite;
+    background: linear-gradient(to bottom right, rgb(167, 15, 15), #4b0909);
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+}
+
+#question{
+    background: linear-gradient(to bottom right, #4c9a8b, rgb(25, 137, 81));
+    width: 500px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    font-size: 100px;
+    font-family: cursive, monospace;
+    text-align: center;
+    color: #064071;
+    border-radius: 3px;
+ /* position: absolute;
+    left: 120px;
+    top: 100px;
+    padding: 60px 200px;
+    border-radius: 10px;
+    border-style: ridge; */
+}
+
+#instruction{
+    width: 500px;
+    height: 50px;
+    margin: 10px auto 10px auto;
+    background: linear-gradient(to bottom right, #1b5f57, rgb(94, 255, 175));
+    color: aquamarine;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    font-family: cursive;
+    border-radius: 3px;
+}
+
+#choice{
+    width: 500px;
+    height: 100px;
+    margin: 10px auto 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(to bottom right, #ecffaf, rgb(114, 173, 144));
+    float: left;
+    margin-right: 53px;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 85px;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#box4{
+    margin-right: 0px;
+}
+
+.box:hover, #startreset:hover{
+    background: linear-gradient(to bottom right, rgb(6, 130, 167), #064071);
+    color: aliceblue;
+    box-shadow: 3px 3px 2px 0px black;
+    -webkit-box-shadow: 3px 3px 2px 0px black;
+    -moz-box-shadow: 3px 3px 2px 0px black;
+}
+
+.box:active, #startreset:active{
+    box-shadow: 0px 0px 0px 0px black;
+    -webkit-box-shadow: 0px 0px 0px 0px black;
+    -moz-box-shadow: 0px 0px 0px 0px black;
+    top: 3px;
+}
+
+#startreset{
+    width: 90px;
+    padding: 5px;
+    background: linear-gradient(to bottom right, rgb(6, 130, 167), #064071);
+    margin: 0px auto;;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    position: relative;
+}
+
+#time{
+    width: 160px;
+    text-align: center;
+    padding: 2px;
+    position: absolute;
+    left: 450px;;
+    top: 400px;
+    background: linear-gradient(to bottom right, rgb(167, 15, 15), #4b0909);
+    color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.7);
+  /*  visibility: hidden; */
+    display: none;
+}
+
+#gameover{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    height: 200px;
+    width: 520px;
+    background: linear-gradient(to bottom right, rgb(255, 167, 0), #7e3f28);
+    text-align: center;
+    color: cornsilk;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    border-radius: 4px;
+    z-index: 2;
+    display: none;
+}
